@@ -22,8 +22,8 @@ def random_predict(number: int = 1) -> int:
         predict_number = np.random.randint(a, b)  # предполагаемое число
         if number == predict_number:
             break  # выход из цикла если угадали
-        elif predict_number > number: # если предсказанное число оказалось больше, то предсказывать будем в новых пределах (ограничиваем сверху)
-            b = predict_number
+        elif predict_number > number: # если предсказанное число оказалось больше, 
+            b = predict_number # то предсказывать будем в новых пределах (ограничиваем сверху)
         else: # аналогично, но ограничиваем теперь снизу. Таким образом, постепенно сужаем диапазон
             a = predict_number
     return count
